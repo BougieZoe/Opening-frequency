@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>opening frequency — 我在看一个叫做我的人物活过的一生</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400&family=Noto+Serif+JP:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #f5f2ec;
+    --ink: #18160f;
+    --ink-mid: #5c5850;
+    --ink-faint: #a89f94;
+    --rule: #ddd8ce;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cream: #141210;
+      --ink: #ede8df;
+      --ink-mid: #9e9890;
+      --ink-faint: #5e5a54;
+      --rule: #2e2b26;
+    }
+  }
+
+  html, body {
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  .page {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 8vmax 2rem 10vmax;
+  }
+
+  /* entrance */
+  .fade { opacity: 0; transform: translateY(10px); animation: rise 1s cubic-bezier(.4,0,.2,1) forwards; }
+  .fade:nth-child(1) { animation-delay: 0.1s; }
+  .fade:nth-child(2) { animation-delay: 0.45s; }
+  .fade:nth-child(3) { animation-delay: 0.55s; }
+  .fade:nth-child(4) { animation-delay: 0.65s; }
+  .fade:nth-child(5) { animation-delay: 0.75s; }
+  .fade:nth-child(6) { animation-delay: 1s; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+
+  /* eyebrow */
+  .eyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5.5rem;
+  }
+
+  /* lang tag */
+  .lang {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  /* rule */
+  .rule {
+    width: 20px;
+    height: 0.5px;
+    background: var(--rule);
+    margin: 4.5rem 0;
+  }
+
+  /* coda */
+  .coda {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    color: var(--ink-faint);
+    font-style: italic;
+    letter-spacing: 0.08em;
+    margin-top: 5rem;
+    line-height: 2;
+  }
+
+  /* ── 中文 ── */
+  .zh {
+    font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 2.4;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+  }
+  .zh p { margin-bottom: 1.6rem; }
+  .zh p:last-child { margin-bottom: 0; }
+  .zh .break { display: block; }
+
+  /* ── English ── */
+  .en {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.85;
+    letter-spacing: 0.008em;
+    color: var(--ink);
+  }
+  .en p { margin-bottom: 1.3rem; }
+  .en p:last-child { margin-bottom: 0; }
+
+  /* ── 日本語 ── */
+  .ja {
+    font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2.7;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+  }
+  .ja p { margin-bottom: 1.8rem; }
+  .ja p:last-child { margin-bottom: 0; }
+
+  /* emphasis — shared */
+  em {
+    font-style: normal;
+    color: var(--ink-mid);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="eyebrow fade">opening frequency</div>
+
+  <!-- 中文 -->
+  <div class="fade">
+    <div class="lang">zh</div>
+    <div class="zh">
+      <p>这不是一本书。</p>
+      <p>它更像是某种信号——<br>
+      从一个更远的地方发出来的，<br>
+      关于一个叫做我的人，<br>
+      如何在地球上<br>
+      爱过、失去过、<br>
+      然后继续发光的记录。</p>
+      <p>里面有真实发生过的事，<br>
+      也有我用想象力重新长出来的部分。<br>
+      你不需要分清哪个是哪个。<br>
+      有时候，杜撰比事实更接近真相。</p>
+      <p>我用音乐的频率记住时空。<br>
+      用气味辨认一段感情还在不在。<br>
+      用随手收藏的小画面，<br>
+      证明某个瞬间曾经存在过。</p>
+      <p>所以这里会有文字，<br>
+      会有画面，<br>
+      会有声音，<br>
+      会有那种说不清楚、<br>
+      但你一碰就懂的情绪质感。<br>
+      它们不按时间排列，<br>
+      因为记忆从来不是线性的。</p>
+      <p>它会随着我一起长大。<br>
+      我现在看某段经历是一种角度，<br>
+      五年后又是另一种。<br>
+      所以它永远是进行时，<br>
+      永远没有最终版本。</p>
+      <p>如果你走到这里，<br>
+      感觉像是进了一个你认识的地方——<br>
+      那你就是那个频率对的人。</p>
+      <p>欢迎进来。</p>
+    </div>
+  </div>
+
+  <div class="rule fade"></div>
+
+  <!-- English -->
+  <div class="fade">
+    <div class="lang">en</div>
+    <div class="en">
+      <p>This is not a book.</p>
+      <p>It is something more like a signal —<br>
+      sent from somewhere further away —<br>
+      about a person called me,<br>
+      and how she loved, lost,<br>
+      and kept giving off light<br>
+      on this earth.</p>
+      <p>Some of it happened.<br>
+      Some of it grew back through imagination.<br>
+      You don't need to tell them apart.<br>
+      Sometimes what is invented<br>
+      is closer to the truth<br>
+      than what actually occurred.</p>
+      <p>I remember time and place through music.<br>
+      I know if a feeling is still alive by its smell.<br>
+      I keep small images — collected without thinking —<br>
+      as proof that a moment once existed.</p>
+      <p>So there will be words here,<br>
+      and images, and sound,<br>
+      and that particular emotional texture<br>
+      you can't quite name<br>
+      but recognize the instant you touch it.<br>
+      None of it is arranged by time,<br>
+      because memory never is.</p>
+      <p>It will grow as I grow.<br>
+      How I see a memory now is one angle.<br>
+      In five years, another.<br>
+      So this is always present tense.<br>
+      Never a final version.</p>
+      <p>If you've made it here<br>
+      and it feels like a place you already know —<br>
+      you are the person with the right frequency.</p>
+      <p>Come in.</p>
+    </div>
+  </div>
+
+  <div class="rule fade"></div>
+
+  <!-- 日本語 -->
+  <div class="fade">
+    <div class="lang">ja</div>
+    <div class="ja">
+      <p>これは本ではない。</p>
+      <p>どちらかといえば、<br>
+      遠いところから届く信号のようなもの。<br>
+      「私」という名の人間が、<br>
+      この地球でどう愛し、失い、<br>
+      それでも光り続けたかの記録。</p>
+      <p>実際に起きたことも、<br>
+      想像の中で育ち直したことも、混ざっている。<br>
+      どちらがどちらか、区別しなくていい。<br>
+      作られたものの方が、<br>
+      本当のことに近いときもある。</p>
+      <p>音楽の周波数で、時間と場所を覚えている。<br>
+      においで、ある感情がまだ生きているかを確かめる。<br>
+      何気なく集めた小さな絵で、<br>
+      ある瞬間がかつて存在したことを証明する。</p>
+      <p>だからここには、言葉があり、<br>
+      映像があり、音がある。<br>
+      うまく説明できないけれど、<br>
+      触れた瞬間にわかる、<br>
+      あの感情の質感もある。<br>
+      時間の順には並んでいない。<br>
+      記憶とは、もともとそういうものだから。</p>
+      <p>これは私と一緒に育っていく。<br>
+      今ある経験の見え方は、今の角度のもの。<br>
+      五年後にはまた別の角度になる。<br>
+      だからいつも現在進行形。<br>
+      最終版は、永遠にない。</p>
+      <p>ここまで来て、<br>
+      知っている場所に迷い込んだような気がしたなら——<br>
+      あなたが、周波数の合う人。</p>
+      <p>どうぞ、入って。</p>
+    </div>
+  </div>
+
+  <div class="coda fade">
+    未完成，持续进行中<br>
+    always in progress<br>
+    進行中、いつも
+  </div>
+
+</div>
+</body>
+</html>
